@@ -1,7 +1,6 @@
 import {images, userValues} from '../utils/Const';
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
-
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
@@ -69,5 +68,4 @@ const Navbar = () => {
   </nav>
   );
 }
-
 export default Navbar;
