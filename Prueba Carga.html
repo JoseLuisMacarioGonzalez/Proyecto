@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Asesorías</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Agenda de Asesorías</h1>
+
+    <form action="procesar_agenda.php" method="post">
+        <label for="materia">Selecciona la materia:</label>
+        <select id="materia" name="materia" required>
+            <option value="matematicas">Matemáticas</option>
+            <option value="ciencias">Ciencias</option>
+            <option value="historia">Historia</option>
+            <option value="literatura">Literatura</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <label for="profesor">Selecciona el profesor:</label>
+        <select id="profesor" name="profesor" required>
+            <option value="profesor1">Profesor 1</option>
+            <option value="profesor2">Profesor 2</option>
+            <option value="profesor3">Profesor 3</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select>
+
+        <label for="fecha">Selecciona la fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Selecciona la hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <button type="submit">Agendar Asesoría</button>
+    </form>
+
+    <style>
+    #hola-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #008CBA;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    #hola-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<button id="hola-button" onclick="saludar()">Prueba Usabilidad</button>
+
+<script>
+    function saludar() {
+        alert('El sito cuenta con las normas de usabilidad :)');
+    }
+</script>
+
+
+</body>
+</html>
