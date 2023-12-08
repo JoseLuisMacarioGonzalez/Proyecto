@@ -1,10 +1,8 @@
 import './App.css';
-
 import './styles/home.css';
 import {images, categories} from './utils/Const';
 import Carousel from './components/carousel/Carousel';
 import CardComponent from './components/carousel/CardCarousel';
-
 function App() {
     return (
       <div class="container-fluid p-md-5 pt-md-0 p-0 pt-0">
